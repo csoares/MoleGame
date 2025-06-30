@@ -3,7 +3,8 @@ import pyautogui
 import time
 
 class ArduinoBridge:
-    def __init__(self, port='/dev/tty.usbmodem1101', baud_rate=9600):
+    # change to the port of your arduino
+    def __init__(self, port='/dev/tty.usbmodem21301', baud_rate=9600):
         self.port = port
         self.baud_rate = baud_rate
         self.serial = None
